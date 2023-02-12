@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Selamat Datang Kembali !"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            android:hint="Masukan username"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Grey"
+            android:textColorHint="@color/Grey"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            android:hint="Masukan sandi"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Grey"
+            android:textColorHint="@color/Grey"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="300dp"
+        android:background="@drawable/button"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
